@@ -1,0 +1,82 @@
+
+/* Компонент rating */
+
+.rating {
+  margin-bottom: 150px;
+  display: flex;
+}
+
+.rating__group {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.rating__title {
+  margin-bottom: 45px;
+  padding: 0;
+}
+
+.rating__box {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  background-image: url("/img/icon-star.svg");
+  background-size: 30px 30px;
+}
+
+.rating__box:focus-within {
+  outline: 2px solid rgb(223, 206, 53);
+  outline-offset: 4px;
+}
+
+.rating__star {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 30px;
+  appearance: none;
+  background-size: 30px 30px;
+  cursor: pointer;
+}
+
+.rating__star:focus {
+  outline: none;
+}
+
+.rating__star:checked,
+.rating__star:hover {
+  background-image: url("/img/icon-star-done.svg");
+}
+
+.rating__star:hover ~ .rating__star {
+  background-image: url("/img/icon-star.svg");
+}
+
+.rating__star--first {
+  width: 20%;
+  z-index: 5;
+}
+
+.rating__star--second {
+  width: 40%;
+  z-index: 4;
+}
+
+.rating__star--third {
+  width: 60%;
+  z-index: 3;
+}
+
+.rating__star--fourth {
+  width: 80%;
+  z-index: 2;
+}
+
+.rating__star--fifth {
+  width: 100%;
+  z-index: 1;
+}
