@@ -25,11 +25,11 @@
   height: 30px;
   background-image: url("/img/icon-star.svg");
   background-size: 30px 30px;
-}
 
-.rating__box:focus-within {
-  outline: 2px solid rgb(223, 206, 53);
-  outline-offset: 4px;
+  &:focus-within {
+    outline: 2px solid rgb(223, 206, 53);
+    outline-offset: 4px;
+  }
 }
 
 .rating__star {
@@ -41,42 +41,45 @@
   appearance: none;
   background-size: 30px 30px;
   cursor: pointer;
-}
 
-.rating__star:focus {
-  outline: none;
-}
+  &:focus {
+    outline: none;
+  }
 
-.rating__star:checked,
-.rating__star:hover {
-  background-image: url("/img/icon-star-done.svg");
+  &:hover {
+    background-image: url("/img/icon-star-done.svg");
+  }
+
+  &:checked {
+    background-image: url("/img/icon-star-done.svg");
+  }
+
+  &--first {
+    width: 20%;
+    z-index: 5;
+  }
+
+  &--second {
+    width: 40%;
+    z-index: 4;
+  }
+
+  &--third {
+    width: 60%;
+    z-index: 3;
+  }
+
+  &--fourth {
+    width: 80%;
+    z-index: 2;
+  }
+
+  &--fifth {
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 .rating__star:hover ~ .rating__star {
   background-image: url("/img/icon-star.svg");
-}
-
-.rating__star--first {
-  width: 20%;
-  z-index: 5;
-}
-
-.rating__star--second {
-  width: 40%;
-  z-index: 4;
-}
-
-.rating__star--third {
-  width: 60%;
-  z-index: 3;
-}
-
-.rating__star--fourth {
-  width: 80%;
-  z-index: 2;
-}
-
-.rating__star--fifth {
-  width: 100%;
-  z-index: 1;
 }
