@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <title>Page-form</title>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="page-header">
+        <nav class="navigation">
+            <ul class="menu list">
+                <li class="list__item link">
+                    <a href="#" class="link__item link__item--first">Личный кабинет</a>
+                </li>
+                <li class="list__item link link">
+                    <a href="#" class="link__item link__item--second">Раздел 1</a>
+                </li>
+                <li class="list__item link">
+                    <a href="#" class="link__item link__item--third">Раздел 2</a>
+                </li>
+                <li class="list__item link">
+                    <a href="#" class="link__item link__item--fourth">Раздел 3</a>
+                </li>
+                <li class="list__item link">
+                    <a href="#" class="link__item link__item--fifth">Раздел 4</a>
+                </li>
+                  <li class="list__item link">
+                    <a href="#" class="link__item link__item--sixth">Раздел 5</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="content-wrapper">
+          <h1 class="visually-hidden">Сервис поиска и бронирования билетов</h1>
+          <article class="content-wrapper__sidebar sidebar">
+              <h2 class="visually-hidden">Сервис TutuRu</h2>
+              <span class="sidebar__text">&#10043;TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</span>
+              <p class="sidebar__text">Наша цель проста - делать наших клиентов счатсливыми а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшшую поддержку благодаря собственному контакт центру.</p>
+          </article>
+          <section class="content-wrapper__stage stage">
+              <div class="stage__wrap">
+                  <div class="stage__container">
+                      <h2 class="stage__title">Заполните форму</h2>
+                      <ul class="stage__list list">
+                          <li class="stage__item stage__item--done size-left">1</li>
+                          <li class="stage__item stage__item--done">2</li>
+                          <li class="stage__item stage__item--active">3</li>
+                          <li class="stage__item">4</li>
+                          <li class="stage__item size-rigth">5</li>
+                      </ul>
+                  </div>
+                  <div class="stage__box">
+                      <span class="stage__tip">Общая информация</span>
+                  </div>
+              </div>
+              <form action="#" method="get" class="content-wrapper__form form">
+                  <div class="form__group">
+                      <div class="form__inner">
+                          <label for="surname" class="form__label title">Фамилия</label>
+                          <input type="text" class="form__input" id="surname">
+                      </div>
+                      <div class="form__inner">
+                          <label for="name" class="form__label title">Имя</label>
+                          <input type="text" class="form__input" id="name">
+                      </div>
+                      <div class="form__inner">
+                          <label for="field" class="form__label title">Отчество</label>
+                          <input type="text" class="form__input" id="field">
+                      </div>
+                  </div>
+                  <div class="form__wrap">
+                      <fieldset class="form__group field">
+                          <legend class="field__title title">Меняли фалилию?</legend>
+                          <div class="field__box">
+                              <label class="control control--noBackground" for="yes" tabindex="0" >
+                                  <input class="visually-hidden control-input" type="radio" name="yes" id="yes" value="Да">
+                                  <span class="control-label">Да</span>
+                              </label>
+                              <label class="control" for="no" tabindex="0" >
+                                  <input class="visually-hidden control-input" type="radio" name="no" id="no" value="Нет">
+                                  <span class="control-label">Нет</span>
+                              </label>
+                          </div>
+                      </fieldset>
+                      <fieldset class="form__group field">
+                          <legend class="field__title title">Пол?</legend>
+                          <div class="field__box">
+                              <label class="control control--noBackground" for="male" tabindex="0">
+                                  <input class="visually-hidden control-input" type="radio" name="male" id="male" value="Муж">
+                                   <span class="control-label">Муж</span>
+                              </label>
+                              <label class="control" for="female" tabindex="0">
+                                  <input class="visually-hidden control-input" type="radio" name="female" id="female" value="Жен">
+                                  <span class="control-label">Жен</span>
+                              </label>
+                          </div>
+                      </fieldset>
+                      <fieldset class="form__group field">
+                          <legend class="field__title title">Семейное положение</legend>
+                          <label class="form__status" for="status"></label>
+                          <select name="family-status" id="status" class="field__select">
+                              <option value="1">Женат/Замужем</option>
+                              <option value="2">Не женат/Не замужем</option>
+                          </select>
+                      </fieldset>
+                  </div>
+                  <div class="form__wrap">
+                      <fieldset class="form__group field">
+                          <legend class="field__title title">Гражданство</legend>
+                          <label class="form__status" for="citizenship"></label>
+                          <select name="citizenship" id="citizenship" class="field__select">
+                              <option value="1">Российская Федерация</option>
+                          </select>
+                      </fieldset>
+                      <fieldset class="form__group field field--type-display">
+                          <legend class="field__title title">Дата рождения</legend>
+                          <label class="form__status form__status--small" for="day"></label>
+                          <select name="day" id="day" class="field__select field--small">
+                              <option value="1">11</option>
+                          </select>
+                          <label class="form__status form__status--big" for="month"></label>
+                          <select name="month" id="month" class="field__select field--big">
+                              <option value="1">июня</option>
+                          </select>
+                          <label class="form__status form__status--small" for="year"></label>
+                          <select name="year" id="year" class="field__select field--medium">
+                              <option value="1">1977</option>
+                          </select>
+                      </fieldset>
+                  </div>
+                  <fieldset class="form__group field">
+                      <legend class="field__title title">Место рождения</legend>
+                      <label for="place-of-birth">
+                          <input name="place-of-birth" id="place-of-birth" class="form__input form__input--size" type="text">
+                      </label>
+                      <span class="field__example">Например, Россия, Комсомольск-на-Амуре</span>
+                  </fieldset>
+                  <div class="form__box">
+                      <a href="#" class="form__button form__button--left">Назад</a>
+                      <a href="#" class="form__button form__button--rigth">Далее</a>
+                  </div>
+              </form>
+          </section>
+      </div>
+    </main>
+  </div>
+  <a href="page.html" class="button button--large link">### Сверстайте тестовую страницу</a>
+</body>
+</html>
