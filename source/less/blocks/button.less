@@ -12,28 +12,64 @@
   margin-bottom: 45px;
 }
 
+.task-button__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-button__btn {
+  margin-bottom: 15px;
+}
+
 .button {
   display: flex;
   padding: 10px 8px;
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   cursor: pointer;
   background-color: #cdcdcd;
+  text-decoration: none;
+  color: #000000;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+  font-family: "Arial", "Helvetica", sans-serif;
 
   &--small {
-    min-width: 100px;
+    width: 100px;
     height: 40px;
   }
 
   &--medium {
-    min-width: 150px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
   }
 
   &--large {
-    min-width: 200px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
+  }
+
+  &--big {
+    width: fit-content;
+  }
+
+  &:hover {
+    background-color: #4696d8;
+  }
+
+  &:focus {
+    background-color: #4696d8;
+  }
+
+  &:active {
+    background-color: #4696d8;
+    opacity: 0.5;
   }
 }
