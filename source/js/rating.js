@@ -1,7 +1,6 @@
 const ratingSum = document.querySelector(".rating__sum");
 const inputs = document.querySelectorAll(".rating__star");
 
-console.log('rating');
 /* рейтинг по default из разметки */
 
 const getDefault = () => {
@@ -19,7 +18,6 @@ const getDefault = () => {
 const getRating = () => {
   const ratingValue = getDefault();
   let array = [Math.floor(ratingValue)];
-  console.log(array);
   inputs.forEach(element => {
       element.addEventListener('click', ()=> {
           let newIndex = element.value;
